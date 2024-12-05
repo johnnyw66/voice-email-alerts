@@ -1,21 +1,15 @@
 
 # Email Watcher - Email to Voice Alerts - Listen out Opportunties. 
 
-Look out for particular emails and make announcements on your Echo Dot/Alexa Devices
+Fed up of missing that vital notification when waiting for Amazon opportunities. 
 
-The Alexa **Voice Monkey** and **Notify Me** Skills are third-party skills that allows you to create and trigger customized Alexa routines and announcements. 
+Using a simple Python script - you can automate checking particular emails from Amazon and make announcements on your Echo Dot/Alexa Devices
 
-They essentially acts as a bridge between your devices, services, or apps and Alexa's ecosystem. Here’s what it offers:
+The Alexa **Voice Monkey** and **Notify Me** Skills are third-party skills that allows you to create and trigger customised Alexa routines and announcements. 
 
-You can make Alexa devices announce specific messages. For example, you can send a message to Alexa to say "You have VTO Opportunities." on all Echo devices in your home.
+Essentially these skills and their associated webservices acts as a bridge between your devices, services, or apps and Alexa's ecosystem. 
 
-
-You’ll need to sign up on the Voice Monkey website to configure your "monkeys" (virtual triggers for Alexa).
-The Voice Monkey skill must be enabled and linked to your Alexa account.
-
-
-
-
+When enabled you can easily make Alexa devices announce specific messages. For example, you can send a message to Alexa to say "You have VTO Opportunities." on all Echo devices in your home.
 
 
 
@@ -135,8 +129,6 @@ Voice Monkey allows you to send announcements or trigger routines via HTTP reque
        print("Error:", response.text)
 
 
-```
-
 ## NotifyMe Alexa Skill - Static Notifications Setup Guide
 
 
@@ -170,6 +162,7 @@ The NotifyMe Alexa skill allows you to send notifications directly to your Alexa
 NotifyMe provides a simple HTTP API for sending notifications. Here’s how to use it:
 
 ### Using Curl
+
 Send a notification directly from the command line:
 ```bash
 curl -X POST https://api.notifymyecho.com/v1/NotifyMe \
@@ -178,10 +171,12 @@ curl -X POST https://api.notifymyecho.com/v1/NotifyMe \
   "notification": "Your custom message here",
   "accessCode": "your_api_key"
 }'
+```
 
 ### Using Python
 
-```
+```python
+
 import httpx
 
 api_url = "https://api.notifymyecho.com/v1/NotifyMe"
@@ -202,6 +197,7 @@ else:
     print(f"Error: {response.status_code} - {response.text}")
 
 ```
+
 
 Altenatively, read the document **Amazon-Alexa-Access-Code-Guide.pdf** found in the docs folder (courtesey of Protesus.com). This gives instructions on how to set up notifications on your alexa devices.
 
@@ -236,7 +232,7 @@ Install pygame and gtts python modules.
 * pip3 install pygame
 
 
-```
+```python
 from gtts import gTTS
 import pygame
 import io
