@@ -4,8 +4,6 @@ Look out for particular emails and make announcements on your Echo Dot/Alexa Dev
 
 BLAH BLAH
 
-
-
 ## Requirements
 
 You need to run this script on a Windows 11 OS/ Mac OSX/Linux.
@@ -21,16 +19,22 @@ After completing your Python installation - install the python libraries pickle,
 
 
 
-Produce the source file **configure.py**. Use **example_configure.py** as a template, copying this to make **configure.py**.
+Produce the source file **configure.py**. Use **example_configure.py** as a template, copying this to make your own **configure.py**.
 
 Open your new **configure.py** source file in your favourite text editor.
 
-Fill in the AtoZ credentials **ATOZ_USERNAME** and **ATOZ_PASSWORD** with your own user name and password.
+Fill in the GMAIL/Google credentials **EMAIL** and **EMAIL_APP_PASSWORD** with your own user email adress and **applicaion** password.
+Leave the **IMAP_SERVER** setting, as is. 
 
-Fill in the **NOTIFICATIONS_TOKEN** with your own notify-me skill token. See details below on what this token is used for.
+Fill in the **NOTIFICATIONS_TOKEN** with your own notify-me skill token. See details below (NotifyMe Alexa Skill) on what this token is used for.
+
+## Voicemonkey Alexa Skill - Dynamic Announcements 
+
+You can now make dynamic annoucements without the need for virtual buttons by signing up to a voicemonkey account - see
+testannounce.py source file and go to https://voicemonkey.io to sign up for a free account.
 
 
-## Notify Me Alexa Skill
+## NotifyMe Alexa Skill - Static Notifications
 
 Read the document **Amazon-Alexa-Access-Code-Guide.pdf** found in the docs folder (courtesey of Protesus.com). This gives instructions on how to set up notifications on your alexa devices.
 
@@ -51,11 +55,6 @@ As per instructions in the protesus documents -
 **To delete notifications from your Alexa device, you can say**
 
 **“Alexa, delete my notifications”.**
-
-## Voicemonkey Skill - Dynamic Announcements 
-
-You can now make dynamic annoucements without the need for virtual buttons by signing up to a voicemonkey account - see
-testannounce.py source file and go to https://voicemonkey.io to sign up for a free account.
 
 
 ## Don't have any Alexa devices?
@@ -94,8 +93,6 @@ def notifyme_announce(text):
     # Wait for the audio to finish
     while pygame.mixer.music.get_busy():
         pygame.time.Clock().tick(10)
-
-
 
 
 pygame.init()
