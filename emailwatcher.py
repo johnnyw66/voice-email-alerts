@@ -1,14 +1,23 @@
 ﻿
 import asyncio
 
-
 import imaplib
 import email
 from email.header import decode_header
 import configure
 import httpx
 
-
+async def notifyme_announce(message):
+    """ Announce messages using Echo Dot Devices and the Notify-Me Skill """
+    print(f"announce: '{message}'")
+    async with httpx.AsyncClient() as client:
+        url = "https://api.notifymyecho.com/v1/NotifyMe"
+        response = await client.post(url,
+                json = {
+                'accessCode': configure.NOTIFICATIONS_TOKEN,
+                'notification': message
+                }) 
+        print(f"NotifyMe Response: {response.text}")
 
 
 async def voice_monkey(message="INSERT YOUR MESSAGE HERE", device=configure.VOICEMONKEY_DEVICE):
@@ -75,9 +84,9 @@ async def check_inbox():
                         print(email_msg)
                         lsub = subject.lower()
                         if (wanted_email(from_, lsub)):
-
-                            await voice_monkey(f'ALERT! ALERT! YOU HAVE {"VTO" if "vto" in lsub else "VET"} OPPORTUNITIES')
-                            
+                            msg = f'ALERT! ALERT! YOU HAVE {"VTO" if "vto" in lsub else "VET"} OPPORTUNITIES'
+                            await voice_monkey(msg)
+                            await notifyme_announce(msg)
         else:
             print("No new emails.")
         mail.logout()
