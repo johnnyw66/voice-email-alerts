@@ -3,7 +3,33 @@
 
 Look out for particular emails and make announcements on your Echo Dot/Alexa Devices
 
-BLAH BLAH
+The Alexa Voice Monkey Skill is a third-party skill that allows you to create and trigger customized Alexa routines and announcements. It essentially acts as a bridge between your devices, services, or apps and Alexa's ecosystem. Here’s what it offers:
+
+1. Custom Announcements
+You can make Alexa devices announce specific messages. For example, you can send a message to Alexa to say "You have VTO Opportunities." on all Echo devices in your home.
+2. Trigger Alexa Routines
+You can trigger Alexa routines remotely using Voice Monkey. For example, you could have a motion sensor or another app trigger an Alexa routine like turning on smart lights or adjusting your thermostat.
+3. Integration with Other Services
+Voice Monkey integrates with services like IFTTT, Zapier, or home automation platforms to extend its capabilities. This allows you to set up triggers based on external events or data.
+4. Text-to-Speech Automation
+Voice Monkey can dynamically generate text-to-speech announcements. This is particularly useful for creating announcements that vary based on external data, such as “The garage door was left open” or “It’s going to rain today.”
+5. API Access
+Voice Monkey provides an API, allowing developers to create more advanced integrations and use cases. For example, a webhook from a smart doorbell could make Alexa announce, "Someone is at the front door."
+Use Cases:
+Home Automation: Triggering routines or making announcements based on sensor inputs.
+Reminders: Personalized, dynamic reminders or alerts.
+Business Applications: Broadcasting announcements in offices or retail spaces.
+Event Notifications: Using external triggers to inform you about specific events, like weather updates or calendar notifications.
+Setup and Requirements:
+You’ll need to sign up on the Voice Monkey website to configure your "monkeys" (virtual triggers for Alexa).
+The Voice Monkey skill must be enabled and linked to your Alexa account.
+Voice Monkey significantly enhances Alexa's automation capabilities, especially when combined with other smart devices or services.
+
+
+
+
+
+
 
 ## Requirements
 
