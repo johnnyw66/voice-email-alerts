@@ -5,11 +5,15 @@ Fed up of missing that vital notification when waiting for Amazon opportunities?
 
 Using a simple Python script - you can automate checking particular emails from Amazon and make announcements on your Echo Dot/Alexa Devices
 
-The Alexa **Voice Monkey** and **Notify Me** Skills are third-party skills that allows you to create and trigger customised Alexa routines and announcements. 
+**Voice Monkey** and **Notify Me** are third-party skills that allows you to create and trigger customised Alexa routines and announcements. 
 
 Essentially these skills and their associated webservices acts as a bridge between your devices, services, or apps and Alexa's ecosystem. 
 
-When enabled you can easily make Alexa devices announce specific messages. For example, you can send a message to Alexa to say "You have VTO Opportunities." on all Echo devices in your home.
+When enabled you can easily make your Alexa devices announce specific messages. For example, you can send a message to Alexa to say "You have VTO Opportunities." on all Echo devices in your home.
+
+**emailwatcher.py** will monitor your gmail account associated with your AtoZ email Notification preferences settings.
+
+![My Local Image](images/xx.png)
 
 
 
