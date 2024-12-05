@@ -27,10 +27,7 @@ You need to run this script on a Windows 11 OS/ Mac OSX/Linux.
 After completing your Python installation - install the python libraries pickle, pycryptodome and pywin32 by issusing the following commands on a command terminal -
 
 
-* pip3 install pickle
-* pip3 install pycryptodome
-* pip3 install pywin32
-* pip3 install requests
+* pip install httpx
 
 
 
