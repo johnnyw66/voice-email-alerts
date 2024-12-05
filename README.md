@@ -13,7 +13,7 @@ When enabled you can easily make your Alexa devices announce specific messages. 
 
 **emailwatcher.py** will monitor your gmail account associated with your AtoZ email Notification preferences settings.
 
-![My Local Image](images/xx.png)
+![AtoZ Notification Preferences](images/atoznotifications.png)
 
 
 
