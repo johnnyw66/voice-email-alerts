@@ -1,3 +1,4 @@
+
 # Email Watcher - Email to Voice Alerts - Looking out Opportunties. 
 
 Look out for particular emails and make announcements on your Echo Dot/Alexa Devices
@@ -24,6 +25,7 @@ Produce the source file **configure.py**. Use **example_configure.py** as a temp
 Open your new **configure.py** source file in your favourite text editor.
 
 Fill in the GMAIL/Google credentials **EMAIL** and **EMAIL_APP_PASSWORD** with your own user email adress and **applicaion** password.
+
 Note: The **EMAIL_APP_PASSWORD** is **NOT** the same as your Google Email password. Read the **Voice Monkey** set up instructions below for more details.
 
 Leave the **IMAP_SERVER** setting, as is. 
