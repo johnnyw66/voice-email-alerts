@@ -1,5 +1,5 @@
 
-# Email Watcher - Email to Voice Alerts - Looking out Opportunties. 
+# Email Watcher - Email to Voice Alerts - Listen out Opportunties. 
 
 Look out for particular emails and make announcements on your Echo Dot/Alexa Devices
 
