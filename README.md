@@ -1,7 +1,7 @@
 
 # Email Watcher - Email to Voice Alerts - Listen out Opportunties. 
 
-Fed up of missing that vital notification when waiting for Amazon opportunities. 
+Fed up of missing that vital notification when waiting for Amazon opportunities?
 
 Using a simple Python script - you can automate checking particular emails from Amazon and make announcements on your Echo Dot/Alexa Devices
 
@@ -18,7 +18,7 @@ When enabled you can easily make Alexa devices announce specific messages. For e
 You need to run this script on a Windows 11 OS/ Mac OSX/Linux.
 
 
-After completing your Python installation - install the python libraries pickle, pycryptodome and pywin32 by issusing the following commands on a command terminal -
+After completing your Python installation - install the python library/module httpx by issusing the following commands on a command terminal -
 
 
 * pip install httpx
